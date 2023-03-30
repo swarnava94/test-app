@@ -44,7 +44,7 @@ public class RegisterServlet extends HttpServlet{
             e.printStackTrace();
         }
         //create the connection
-        try(Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/firstdb","root","Password@123");
+        try(Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sys","root","Password@123");
                 PreparedStatement ps = con.prepareStatement(INSERT_QUERY);){
             //set the values
             ps.setString(1, name);
